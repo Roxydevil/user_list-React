@@ -14,6 +14,7 @@ export default class PersonList extends React.Component {
             search: '',
             visibleChart: false,
             femalePersons: 0,
+            openItemId: null,
         };
         this.showChart = this.showChart.bind(this);
     }
@@ -54,6 +55,10 @@ export default class PersonList extends React.Component {
         this.setState({ search: event.target.value.substr(0, 20) });
     }
 
+    handleClick = openItemId => this.setState({
+        openItemId: this.state.openItemId === openItemId ? null : openItemId
+    })
+
     render() {
         let filteredPersons = this.state.persons.filter(
             (person) => {
@@ -62,9 +67,14 @@ export default class PersonList extends React.Component {
             }
         );
         const persons = filteredPersons.map((person) => {
-            return <Item key={person.id} person={person} />;
-        })
-
+            return <Item
+                key={person.id}
+                person={person}
+                isOpen={this.state.openItemId === person.id}
+                onButtonClick={this.handleClick.bind(this, person.id)}
+            />;
+        });
+        console.log(this.state.openItemId);
         console.log('femalePersons= ' + this.state.femalePersons); // Здесь значение 0
         return (
             <div className="itemBlock">

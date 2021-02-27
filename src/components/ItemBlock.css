@@ -1,4 +1,23 @@
 .itemBlock {
     width: 90%;
     min-height: 100px;
+    height: auto;
+}
+
+input {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 160px;
+    height: 24px;
+    z-index: 100;
+}
+
+button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: 24px;
+    z-index: 100;
 }

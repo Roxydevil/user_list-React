@@ -1,6 +1,7 @@
 .heading {
     width: 90%;
     height: 60px;
+    min-height: 60px;
     padding-bottom: 10px;
     display: flex;
     flex-direction: row;
@@ -9,6 +10,10 @@
     font-weight: 600;
     font-size: 1em;
     color: #3e4444;
+    position: sticky;
+    top: 0;
+    background-color: #e0e2e4;
+    z-index: 90;
 }
 
 .headingItem {

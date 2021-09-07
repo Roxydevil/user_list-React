@@ -12,12 +12,12 @@
 
 1. User List / Список пользователей
 * Отобразить User List c https://randomuser.me/ API который будет содержать:
-** Avatar image / Изображение пользователя
-** Last name / Фамилия
-** First name / Имя
-** Username / Никнейм
-** Phone / Телефон
-** Location / Адрес
+  * Avatar image / Изображение пользователя
+  * Last name / Фамилия
+  * First name / Имя
+  * Username / Никнейм
+  * Phone / Телефон
+  * Location / Адрес
 * Аватар должен иметь круглую форму.
 
 ![Figure 2: user_list](readme/user_list.jpg)
@@ -29,17 +29,17 @@ Figure 1: User List
 
 2. User Details / Данные о пользователе
 * Когда пользователь кликает на одного из юзеров, должна появляться дополнительная информация:
-** Last name / Фамилия
-** First Name / Имя
-** Gender icon / Пол
-** Username / Никнейм
-** Registered date / Дата регистрации
-** Email / Емаил
-** Location / Адрес
-** Birthday / Дата рождения
-** Phone / Телефон
-** Cell / Мобильный телефон
-** Bigger avatar image / Увеличенное изображение пользователя
+  * Last name / Фамилия
+  * First Name / Имя
+  * Gender icon / Пол
+  * Username / Никнейм
+  * Registered date / Дата регистрации
+  * Email / Емаил
+  * Location / Адрес
+  * Birthday / Дата рождения
+  * Phone / Телефон
+  * Cell / Мобильный телефон
+  * Bigger avatar image / Увеличенное изображение пользователя
 * При повторном нажатии на выбранную строку она должны свернуться обратно.
 * При выборе другой строки - предыдущая должна быть свернута.
 
